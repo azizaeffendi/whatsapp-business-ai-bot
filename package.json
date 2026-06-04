@@ -1,0 +1,41 @@
+{
+  "name": "whatsapp-business-ai-bot",
+  "version": "1.0.0",
+  "description": "Complete WhatsApp Business AI automation system",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "build": "tsc",
+    "test": "jest",
+    "db:migrate": "node src/db/migrate.js",
+    "db:seed": "node src/db/seed.js",
+    "lint": "eslint src/**/*.js"
+  },
+  "keywords": ["whatsapp", "chatbot", "ai", "automation", "openai", "business", "indonesia", "crm", "booking"],
+  "author": "Aziz Aeffendi <bagijuruss@gmail.com> (https://github.com/azizaeffendi)",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "openai": "^4.20.0",
+    "pg": "^8.11.3",
+    "redis": "^4.6.10",
+    "winston": "^3.11.0",
+    "node-cron": "^3.0.3",
+    "joi": "^17.11.0",
+    "helmet": "^7.1.0",
+    "cors": "^2.8.5",
+    "compression": "^1.7.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2",
+    "jest": "^29.7.0",
+    "eslint": "^8.54.0",
+    "supertest": "^6.3.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
